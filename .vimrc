@@ -54,8 +54,8 @@ let g:PaperColor_Theme_Options = {
 
 let mapleader = " "
 set t_Co=256
-set background=light
-colorscheme jelly 
+set background=dark
+colorscheme PaperColor
 
 " PLUGINS  ------------------------------------------------------------ {{{
 
@@ -90,7 +90,7 @@ noremap <c-a>k <c-w>-
 noremap <c-a>h <c-w>>
 noremap <c-a>l <c-w><
 
-nnoremap <ESC> :nohlsearch<CR>
+nnoremap <ESC> :nohl<CR>
 nnoremap n nzz
 nnoremap N Nzz
 vnoremap J :m '>+1<CR>gv=gv
@@ -102,9 +102,16 @@ nnoremap <leader>y "+y
 nnoremap <leader>Y "+Y
 
 nnoremap <C-p> :w <CR>:!clear <CR>:!python3 % <CR>
+
 nnoremap <C-x> :vertical resize 40<CR>
 nnoremap <C-c> :w <CR> :!clang++ -Wall -std=c++20 '%' -o '%<' && '%<' <CR>
-nnoremap <C-g> :w <CR> :!clang++ -Wall -std=c++20 '%' -o '%<' && '%<' <CR>
+nnoremap <C-t> :!command xforce test<CR>
+nnoremap <C-b> :edit main.cpp<CR>
+nnoremap <C-m> :edit output.txt<CR>
+nnoremap <C-n> :edit debug.txt<CR>
+nnoremap <C-,> :edit req_output.txt<CR>
+nnoremap <C-.> :edit input.txt<CR>
+
 nnoremap <leader>f :source ~/.vimrc <CR>
 nnoremap <leader><leader>w :vnew input.txt <CR> :new output.txt
 " }}}

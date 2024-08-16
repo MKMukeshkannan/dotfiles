@@ -81,7 +81,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(vi-mode macos git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(macos git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -159,6 +159,3 @@ current_date=$(date +%Y-%m-%d)
 days_difference=$(( ($(date -j -f "%Y-%m-%d" "2024-09-20" +%s) - $(date +%s)) / 86400 ))
 
 figlet $days_difference 
-
-echo "NPETEL WK 1 ASSIGNMENT DUE"
-figlet "AUG 7" 
