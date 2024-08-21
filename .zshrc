@@ -11,7 +11,7 @@ neofetch --kitty ~/Pictures/sushi.png --image_size 250
 # # If you come from bash you might have to change your $PATH.
 # # export PATH=$HOME/bin:/usr/local/bin:$PATH
 #
-# Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installation. 
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -159,3 +159,4 @@ current_date=$(date +%Y-%m-%d)
 days_difference=$(( ($(date -j -f "%Y-%m-%d" "2024-09-20" +%s) - $(date +%s)) / 86400 ))
 
 figlet $days_difference 
+eval "$(zoxide init zsh)"
