@@ -160,5 +160,3 @@ days_difference=$(( ($(date -j -f "%Y-%m-%d" "2024-09-20" +%s) - $(date +%s)) / 
 
 figlet $days_difference 
 eval "$(zoxide init zsh)"
-
-[ -f "/Users/mukeshkannan/.ghcup/env" ] && . "/Users/mukeshkannan/.ghcup/env" # ghcup-env

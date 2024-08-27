@@ -54,7 +54,7 @@ let g:PaperColor_Theme_Options = {
 
 let mapleader = " "
 set t_Co=256
-set background=dark
+set background=light
 colorscheme PaperColor
 
 " PLUGINS  ------------------------------------------------------------ {{{

@@ -8,3 +8,10 @@ bold_italic_font auto
 font_size 18.0
 
 window_padding_width 20
+
+
+
+# BEGIN_KITTY_THEME
+# Red Alert
+include current-theme.conf
+# END_KITTY_THEME

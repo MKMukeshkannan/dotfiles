@@ -4,15 +4,20 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 ITEMS_DIR="$CONFIG_DIR/items"
 
 
-sketchybar --bar height=28        \
+sketchybar --bar height=32        \
+                 corner_radius=5 \
                  blur_radius=50   \
                  position=top     \
-                 padding_left=13  \
-                 padding_right=13 \
+                 padding_left=2  \
+                 padding_right=2 \
+                 border_width=2 \
+                 border_color=0xff000000 \
+                 y_offset=4 \
+                 margin=16 \
                  color=$BAR_COLOR
 
 sketchybar --default icon.font="Symbols Nerd Font:Regular:12.0"  \
-                     icon.color=$SECONDARY_COLOR \
+                     icon.color=$THIRD_COLOR \
                      icon.padding_left=10 \
                      icon.padding_right=4 \
                      \
@@ -20,13 +25,13 @@ sketchybar --default icon.font="Symbols Nerd Font:Regular:12.0"  \
                      padding_right=5 \
                      \
                      label.font="MesloLGS NF:Bold:12.0" \
-                     label.color=$SECONDARY_COLOR \
+                     label.color=$THIRD_COLOR \
                      label.padding_left=4 \
                      label.padding_right=10 \
                      \
                      background.color=$ACCENT_COLOR \
                      background.corner_radius=5 \
-                     background.height=20 \
+                     background.height=22 \
 
 source $ITEMS_DIR/logo.sh
 source $ITEMS_DIR/aerospace.sh
