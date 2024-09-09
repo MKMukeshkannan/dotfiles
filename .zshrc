@@ -1,5 +1,5 @@
 echo '\n'
-neofetch --kitty ~/Pictures/sushi.png --image_size 250
+neofetch --kitty ~/Pictures/loga.png --image_size 250
 
 # # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # # Initialization code that may require console input (password prompts, [y/n]

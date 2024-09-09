@@ -25,3 +25,5 @@ vim.keymap.set("n", "<leader>tp", ":tabp<CR>")     --  go to previous tab
 vim.keymap.set("n", "<leader>ft", ":TodoTelescope<CR>")
 
 vim.keymap.set("n", "<leader>fc", "<cmd>clang++ -Wall -std=c++11 main.cpp -o main && ./main<cr>")
+
+vim.keymap.set("n", "<C-'>", ":w <CR> :!sh clang++ -Wall -std=c++20 '%' -o '%<' && '%<' <CR> ")
